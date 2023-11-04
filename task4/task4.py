@@ -12,9 +12,9 @@ try:
             nums.append(int(line.strip()))
 
 except FileNotFoundError as e:
-    print(f"Файл не найден: {e.filename}")
+    Exception
 except Exception as e:
-    print(f"Ошибка чтения файла: {e}")
+    Exception
 
 
 ans = 0

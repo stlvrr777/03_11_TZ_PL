@@ -30,15 +30,17 @@ try:
         counter = 0
         for line in file2:
             if counter >= 100:
-                break  # Прерываем чтение после 100 строк
+                break  
             t = [float(x) for x in line.strip().split()] 
             print(count(coord, rad, t))
             counter += 1
             
+
+
 except FileNotFoundError as e:
-    print(f"Файл не найден: {e.filename}")
+    Exception
 except Exception as e:
-    print(f"Ошибка чтения файла: {e}")
+    Exception
 
 
     
